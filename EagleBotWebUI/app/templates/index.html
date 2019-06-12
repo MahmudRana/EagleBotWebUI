@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bot UI</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+
+  
+</head>
+
+<body>
+
+  <div class="chat-output" id="chat-output">
+  <div class="user-message">
+    <div class="message">Hey! Welcome to EagleBot :D</div>
+    <div class="message">Here are some of the Popular Question Category -> <br>Course Search<br>Event Search<br>RAC Timing<br></div>
+    <!--<div class="message">Course Search</div>-->
+    <!--<div class="message">Event Search</div>-->
+    <!--<div class="message">RAC Timing</div>-->
+    <div class="message">But, Hey you can ask anything regarding Georgia Southern.</div>
+    <div class="message">As a child bot, I will try my best :D </div>
+  </div>
+</div>
+
+<div class="chat-input">
+  <form action="#0" id="user-input-form">
+    <input type="text" id="user-input" class="user-input" placeholder="Talk to Eaglebot.">
+  </form>
+  <!--<form action="{{ url_for('handle_data') }}" method="post">-->
+    <!--<input type="text" name="projectFilepath" class="user-input " placeholder="Talk to the bot.">-->
+    <!--&lt;!&ndash;<input type="submit">&ndash;&gt;-->
+  <!--</form>-->
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+    <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'js/index.js') }}" ></script>
+
+
+
+</body>
+
+</html>
